@@ -3,8 +3,6 @@
         padding-top: 10px;
         padding-bottom: 10px;
         border: none;
-        padding-right: 32px;
-        padding-left: 32px;
         font-family: inherit;
         background: var(--accent-color);
         color: var(--neutral-color);
@@ -17,5 +15,41 @@
         box-shadow: none;
         transition: background-color 250ms var(--tran-hover),
             box-shadow 250ms var(--tran-hover);
-    
 }
+
+@mixin mq($type){
+    $mobile: 480px;
+    $tablet: 768px;
+    $desctop: 1280px;
+
+
+    @if $type =='mobile-only' {
+        @media screen and (max-width: #{$tablet - 0.02}) {
+            @content;
+        }
+    }
+
+    @if $type == 'mobile' {
+        @media screen and (min-width: 480px) {
+            @content;
+        }
+        }
+
+    @if $type =='tablet-only' {
+     @media screen and (min-width: 768px) and (max-width: #{$desktop - 0.02}) {
+         @content;
+     }
+ }
+
+    @if $type =='tablet' {
+        @media screen and (min-width: 768px) {
+            @content;
+            }
+          }
+    
+    @if $type =='desktop' {
+      @media screen and (min-width: 1200px) {
+          @content;
+      }
+  }
+    }

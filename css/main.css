@@ -129,6 +129,11 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.hero-button {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
 .modal-button {
   padding-right: 56px;
   padding-left: 55px;
@@ -249,6 +254,8 @@ img {
   transition: background-color 250ms var(--tran-hover), -webkit-box-shadow 250ms var(--tran-hover);
   transition: background-color 250ms var(--tran-hover), box-shadow 250ms var(--tran-hover);
   transition: background-color 250ms var(--tran-hover), box-shadow 250ms var(--tran-hover), -webkit-box-shadow 250ms var(--tran-hover);
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .hero-button:hover {
   color: var(--neutral-color);
@@ -847,13 +854,16 @@ img {
 }
 
 .hero-title {
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 696px;
+  margin-bottom: 40px;
   color: var(--neutral-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .features-section {
@@ -1018,15 +1028,19 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 50%;
-  -webkit-transition: background-color 250ms var(--tran-hover), fill 250ms var(--tran-hover);
-  transition: background-color 250ms var(--tran-hover), fill 250ms var(--tran-hover);
+  -webkit-transition: background-color 250ms var(--tran-hover), fill 250ms var(--tran-hover), -webkit-box-shadow 250ms var(--tran-hover);
+  transition: background-color 250ms var(--tran-hover), fill 250ms var(--tran-hover), -webkit-box-shadow 250ms var(--tran-hover);
+  transition: background-color 250ms var(--tran-hover), fill 250ms var(--tran-hover), box-shadow 250ms var(--tran-hover);
+  transition: background-color 250ms var(--tran-hover), fill 250ms var(--tran-hover), box-shadow 250ms var(--tran-hover), -webkit-box-shadow 250ms var(--tran-hover);
 }
 .teambottom-list__link:hover, .teambottom-list__link:focus {
   fill: var(--neutral-color);
   background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .teambottom-list__link:hover .teambottom-list__icon, .teambottom-list__link:focus .teambottom-list__icon {
   fill: var(--neutral-color);
