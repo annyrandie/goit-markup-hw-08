@@ -1,0 +1,102 @@
+.team-list {
+    display: flex;
+}
+
+.team-list__item {
+    margin-right: 30px;
+    background-color: var(--neutral-color);
+
+&:last-child {
+        margin-right: 0;
+    }
+}
+
+.team-section {
+    background-color: var(--neutral-bgc);
+}
+
+.team-section__title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.teambottom__title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
+}
+
+.teambottom__text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+}
+
+.teambottom-container {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.teambottom-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms var(--tran-hover);
+}
+
+.teambottom-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 50%;
+    transition: background-color 250ms var(--tran-hover),
+        fill 250ms var(--tran-hover),
+        box-shadow 250ms  var(--tran-hover);
+
+    &:hover,
+    &:focus {
+            fill: var(--neutral-color);
+            background-color: var(--accent-color);
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    
+    &:hover .teambottom-list__icon,
+    &:focus .teambottom-list__icon {
+            fill: var(--neutral-color);
+        }
+}
+
+.teambottom-list__item {
+    background-color: var(--footer-white);
+    border-radius: 50%;
+    transition: background-color 250ms var(--tran-hover);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+                }
+}
+
+.teambottom-list__icon {
+    fill: var(--icons);
+    transition: fill 250ms var(--tran-hover);
+}

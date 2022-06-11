@@ -1,0 +1,35 @@
+.features-section {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
+.features-list {
+    display: flex;
+}
+
+.feature-list__title {
+    margin-bottom: 10px;
+}
+
+.feature-list__text {
+    width: 270px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text-color);
+    line-height: 1.71;
+}
+
+.feature-list__item {
+    margin-right: 30px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.feature-list__container {
+    background-color: var(--neutral-bgc);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+}

@@ -1,0 +1,21 @@
+@mixin btn {
+    display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        padding-right: 32px;
+        padding-left: 32px;
+        font-family: inherit;
+        background: var(--accent-color);
+        color: var(--neutral-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: none;
+        transition: background-color 250ms var(--tran-hover),
+            box-shadow 250ms var(--tran-hover);
+    
+}

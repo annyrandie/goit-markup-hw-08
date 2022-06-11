@@ -1,0 +1,28 @@
+.header {
+    border-bottom: 1px solid var(--border-portfolio);
+}
+
+.sec-header {
+    padding-bottom: 32px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.nav-adress {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 0;
+}
+
+.portfolio-ph {
+    margin-bottom: 94px;
+}

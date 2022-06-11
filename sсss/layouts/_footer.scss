@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--logo-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.adress-list .link {
+    color: var(--footer-white);
+    line-height: 1.1;
+    text-decoration: none;
+    transition: color 250ms var(--tran-hover);
+}
+
+.accent-footer,
+.adress {
+    color: var(--neutral-color);
+    text-decoration: none;
+    transition: color 250ms var(--tran-hover);
+}
+
+.adress {
+    margin-top: 20px;
+    margin-right: 0;
+}
+
+.adress-list__item {
+    margin-bottom: 9px;
+    margin-right: 0;
+
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.adrfooter-div {
+    margin-right: 70px;
+}
+
