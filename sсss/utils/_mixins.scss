@@ -20,7 +20,7 @@
 @mixin mq($type){
     $mobile: 480px;
     $tablet: 768px;
-    $desctop: 1280px;
+    $desktop: 1280px;
 
 
     @if $type =='mobile-only' {
@@ -30,19 +30,19 @@
     }
 
     @if $type == 'mobile' {
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: $mobile) {
             @content;
         }
         }
 
     @if $type =='tablet-only' {
-     @media screen and (min-width: 768px) and (max-width: #{$desktop - 0.02}) {
+     @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
          @content;
      }
  }
 
     @if $type =='tablet' {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             @content;
             }
           }
@@ -55,7 +55,7 @@
   }
 
     @if $type =='desktop' {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
           @content;
       }
   }

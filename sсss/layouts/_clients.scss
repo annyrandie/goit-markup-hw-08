@@ -8,14 +8,34 @@
 }
 
 .clients-list {
-    display: flex;
-    justify-content: center;  
+    // display: flex;
+    // justify-content: center;
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+    
+        @media screen and (min-width:1280px) {
+            display: flex;
+        }
 }
 
 .clients-list__item {
     border: 1px solid var(--icons);
     border-radius: 4px;
     transition: border-color 250ms var(--tran-hover);
+
+        @media screen and (min-width:768px) {
+                width: calc((100% - 2 * 30px)/2);
+                margin: 15px;
+            }
+        
+            &:not(:last-child) {
+                @media screen and (max-width:767px) {
+                    margin-bottom: 30px;
+                }
+            }
 }
 
 .clients-list__item:hover,
