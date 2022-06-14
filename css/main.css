@@ -1208,13 +1208,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .clients-list {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1226,7 +1220,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .clients-list__item {
-    width: calc((100% - 60px) / 2);
+    width: calc(100% - 30px);
     margin: 15px;
   }
 }

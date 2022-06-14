@@ -11,11 +11,7 @@
     // display: flex;
     // justify-content: center;
     @media screen and (max-width:767px) {
-            width: calc((100% - 2 * 30px)/2);
-            margin: 15px;
-            display: flex;
-            flex-wrap: wrap;
-           
+       margin: -15px;
         }
 }
 
@@ -25,8 +21,8 @@
     transition: border-color 250ms var(--tran-hover);
 
         @media screen and (max-width:767px) {
-                width: calc((100% - 2 * 30px)/2);
-                margin: 15px;
+            width: calc(100% - 2 * 30px / 2);
+           margin: 15px;
             }
         
         //     &:not(:last-child) {
