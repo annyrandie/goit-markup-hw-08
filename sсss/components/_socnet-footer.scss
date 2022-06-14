@@ -28,17 +28,24 @@
     text-transform: uppercase;
 
     margin-bottom: 20px;
+
+    @media screen and (max-width:767px) {
+            text-align: center;
+        }
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
+// .footer-container {
+//     display: flex;
+//     align-items: baseline;
+// }
 
 .socnetfooter-list {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width:767px) {
+            margin-bottom: 60px;
+        }
 }
 
 .socnetfooter-list__icon {

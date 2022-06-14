@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         margin: -15px;
     }
- @media screen and (min-width:1280px) {
+ @media screen and (min-width:1200px) {
      display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,8 @@
     justify-content: center;
     color: var(--text-color);
     line-height: 1.71;
+    
+    
 }
 
 // .feature-list__item {

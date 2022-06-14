@@ -15,6 +15,12 @@
     margin-right: auto;
     max-width: 1600px;
     height: 600px;
+    @media screen and (max-width:767px) {
+            max-width: 480px;
+            height: 400px;
+            padding-bottom: 118px;
+            height: auto;
+        }
 }
 
 .hero-title {
@@ -30,4 +36,10 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width:767px) {
+            font-size: 26px;
+            line-height: 1.61;
+            width: auto;
+        }
 }

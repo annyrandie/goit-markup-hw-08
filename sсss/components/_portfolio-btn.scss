@@ -1,15 +1,28 @@
 .portfoliobtn-list {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     margin-bottom: 50px;
+    @media screen and (max-width:767px){
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
 }
 
 
 
 .portfoliobtn-list__item {
-    margin-right: 8px;
+    // margin-right: 8px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+
+        @media screen and (max-width:767px) {
+           margin-right: 30px;
+           margin-bottom: 21px;
+    
+        }
 }
