@@ -8,10 +8,13 @@
 }
 
 .clients-list {
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: no-wrap;
     @media screen and (max-width:767px) {
        margin: -15px;
+       flex-wrap: wrap;
         }
 }
 
@@ -19,10 +22,12 @@
     border: 1px solid var(--icons);
     border-radius: 4px;
     transition: border-color 250ms var(--tran-hover);
+    width: 210px;
+    margin: 15px;
 
         @media screen and (max-width:767px) {
-            width: calc(100% - 2 * 30px / 2);
-           margin: 15px;
+           
+           
             }
         
         //     &:not(:last-child) {

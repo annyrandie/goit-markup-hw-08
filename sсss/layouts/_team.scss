@@ -1,5 +1,5 @@
 .team-list {
-    // display: flex;
+    //display: flex;
    
     @media screen and (min-width:768px) {
             display: flex;
@@ -17,6 +17,12 @@
 .team-list__item {
     // margin-right: 30px;
     background-color: var(--neutral-color);
+    display:flex;
+    flex-direction: column;
+
+    img {
+        align-self: center;
+    }
 
 &:last-child {
         // margin-right: 0;
