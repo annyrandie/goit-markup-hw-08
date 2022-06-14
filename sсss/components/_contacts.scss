@@ -2,6 +2,11 @@
     padding-bottom: 32px;
     padding-top: 32px;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+    
+        }
 }
 
 .contact-list__link {

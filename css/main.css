@@ -565,6 +565,11 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
+}
 
 .contact-list__link {
   color: var(--text-color);
@@ -901,6 +906,11 @@ img {
   text-transform: uppercase;
 }
 
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .features-list {
     display: -webkit-box;
@@ -916,6 +926,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -929,6 +945,7 @@ img {
 }
 
 .feature-list__text {
+  width: 270px;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--text-color);
@@ -941,17 +958,6 @@ img {
 .feature-list__item:last-child {
   margin-right: 0;
 }
-@media screen and (min-width: 768px) {
-  .feature-list__item {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .feature-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .feature-list__item:not(:last-child) {
@@ -960,6 +966,7 @@ img {
 }
 
 .feature-list__container {
+  margin-right: 15px;
   background-color: var(--neutral-bgc);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -973,16 +980,20 @@ img {
 @media screen and (max-width: 767px) {
   .feature-list__container {
     padding: 25px 190px;
-    width: 450px;
   }
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .feature-list__container {
     padding: 25px 142px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .feature-list__container {
+    padding: 25px 100px;
+  }
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
   .service-container {
     display: none;
   }
@@ -1177,6 +1188,12 @@ img {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 480px) {
+  .clients-list {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients-list {
     display: -webkit-box;
@@ -1295,6 +1312,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
+}
+@media screen and (max-width: 767px) {
+  .navigation-list {
+    display: none;
+  }
 }
 .navigation-list:last-child {
   margin-right: 0;
