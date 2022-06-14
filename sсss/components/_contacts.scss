@@ -1,11 +1,10 @@
 .contact-list {
     padding-bottom: 32px;
     padding-top: 32px;
-    display: flex;
+    // display: flex;
 
     @media screen and (max-width: 767px) {
             display: none;
-    
         }
 }
 

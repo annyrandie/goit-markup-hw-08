@@ -565,9 +565,6 @@ img {
 .contact-list {
   padding-bottom: 32px;
   padding-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media screen and (max-width: 767px) {
   .contact-list {
@@ -869,10 +866,12 @@ img {
   padding-bottom: 32px;
 }
 
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .navigation-container {
@@ -898,6 +897,12 @@ img {
 
 .portfolio-ph {
   margin-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .hero-section {
